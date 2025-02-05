@@ -53,3 +53,51 @@ Para criar aplicativo dentro do diretorio projetodjango
 ```bash
 $ python manage.py startapp aplicativo
 ```
+
+Abra o arquivo settings.py na pasta projetodjango/aplicativoconfig para configurar banco de dados, lingua, formato da data, fuso horario e email
+
+Comente a variavel DATABASES e adicione o seguinte codigo
+
+```json
+DATABASES = {
+    'default':{
+        'ENGINE':'djongo',
+        'NAME':'name',
+        'ENFORCE_SCHEMA': False,
+        'CLIENT':{
+            'host':'mongodb://0.0.0.0:27017/',
+        }
+    }
+}
+```
+
+Defina o idioma
+
+```json
+LANGUAGE_CODE = 'pt-br'
+```
+
+Defina o formato da data
+
+```json
+DATE_INPUT_FORMATS = ('%d/%m/%Y')
+```
+
+Defina o fuso horario
+
+```json
+TIME_ZONE = 'America/Sao_Paulo'
+```
+
+Defina o teste com mensagens de e-mail que seriam enviadas no console
+
+```json
+EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
+```
+
+Agora aplique as migrações do banco de dados
+
+```
+python3 manage.py makemigrations
+python3 manage.py migrate
+```
