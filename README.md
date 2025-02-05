@@ -58,7 +58,7 @@ Abra o arquivo settings.py na pasta projetodjango/aplicativoconfig para configur
 
 Comente a variavel DATABASES e adicione o seguinte codigo
 
-```json
+```python
 DATABASES = {
     'default':{
         'ENGINE':'djongo',
@@ -73,25 +73,25 @@ DATABASES = {
 
 Defina o idioma
 
-```json
+```python
 LANGUAGE_CODE = 'pt-br'
 ```
 
 Defina o formato da data
 
-```json
+```python
 DATE_INPUT_FORMATS = ('%d/%m/%Y')
 ```
 
 Defina o fuso horario
 
-```json
+```python
 TIME_ZONE = 'America/Sao_Paulo'
 ```
 
 Defina o teste com mensagens de e-mail que seriam enviadas no console
 
-```json
+```python
 EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
 ```
 
