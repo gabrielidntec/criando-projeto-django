@@ -20,8 +20,8 @@ $ source .venv/bin/activate
 Crie um arquivo requirements.txt, adicione as dependencias necessarias e execute o arquivo
 
 ```textile
-django==3.1.12
-djongo==1.3.7
+django==
+djongo==
 setuptools
 ```
 
