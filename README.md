@@ -97,7 +97,7 @@ EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
 
 Agora aplique as migrações do banco de dados
 
-```
+```bash
 python3 manage.py makemigrations
 python3 manage.py migrate
 ```
