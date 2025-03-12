@@ -1,20 +1,20 @@
 Cria uma pasta com o nome do projeto
 
 ```bash
-$ mkdir projetodjango
+mkdir projetodjango
 ```
 
 Entre no diretorio e crie um ambiente virtual
 
 ```bash
-$ cd projetodjango
-$ python3 -m venv .venv
+cd projetodjango
+python3 -m venv .venv
 ```
 
 Ative o ambiente virtual
 
 ```bash
-$ source .venv/bin/activate
+source .venv/bin/activate
 ```
 
 Crie um arquivo requirements.txt, adicione as dependencias necessarias e execute o arquivo
@@ -23,35 +23,36 @@ Crie um arquivo requirements.txt, adicione as dependencias necessarias e execute
 django==
 djongo==
 setuptools
+django-autocomplete-light
 ```
 
 ```bash
-$ pip3 install -r requirements.txt
+pip3 install -r requirements.txt
 ```
 
 volte para o diretorio anterior
 
 ```bash
-$ cd ..
+cd ..
 ```
 
 Execute o comando para criar um aplicativo de configuração e orquestração dentro do diretorio projetodjango
 
 ```bash
-$ django-admin startproject aplicativoconfig projetodjango
+django-admin startproject aplicativoconfig projetodjango
 ```
 
 Entre no diretorio projetodjango e execute o servidor, para verificar se o projeto Django está funcionando
 
 ```bash
-$ cd projetodjango
-$ python manage.py runserver
+cd projetodjango
+python manage.py runserver
 ```
 
 Para criar aplicativo dentro do diretorio projetodjango
 
 ```bash
-$ python manage.py startapp aplicativo
+python manage.py startapp aplicativo
 ```
 
 Abra o arquivo settings.py na pasta projetodjango/aplicativoconfig para configurar banco de dados, lingua, formato da data, fuso horario e email
