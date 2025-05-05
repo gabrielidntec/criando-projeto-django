@@ -20,6 +20,10 @@ source .venv/bin/activate
 Crie um arquivo requirements.txt, adicione as dependencias necessarias e execute o arquivo
 
 ```textile
+touch requirements.txt
+```
+
+```textile
 django==
 djongo==
 setuptools
